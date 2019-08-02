@@ -9,7 +9,7 @@ Zhang, Chao, et al. "UniBench: A benchmark for multi-model database management s
 
 ## Environment
 
-To run this benchmark, you need to have the systems under test installed, and JRE 7 or 8 installed. The current implementations include four the-state-of-the-art MMDS, ArangoDB, OrientDB, AgensGraph, and Spark (partial evaluation), you may also develop new query of interest to gain more sights.
+To run this benchmark, you need to have the systems under test installed, and JRE 7 or 8 installed. The current implementations include four state-of-the-art MMDS, ArangoDB, OrientDB, AgensGraph, and Spark (partial evaluation), you may also develop new query of interest to gain more sights.
 
 ## Running
 
