@@ -1,3 +1,10 @@
-# Unibench - Towards Benchmarking Multi-Model DBMS
-As more businesses realized that data, in all forms and sizes, is critical to making the best possible decisions, we see the continued growth of systems that support massive volume of relational or non-relational forms of data. Unlike traditional database management systems which are organized around a single data model that determines how data can be organized, stored, and manipulated, a multi-model database is designed to support multiple data models against a single, integrated backend. For example, document, graph, relational, and key-value models are examples of data models that may be supported by a multi-model database. Nothing shows the picture more starkly than looking at Gartner Magic quadrant for operational database management systems, which assumes that, by 2017, all leading operational DBMSs will offer multiple data models, relational and NoSQL, in a single DBMS platform. Having a single data platform for managing both well-structured data and NoSQL data is beneficial to users; this approach reduces significantly integration, migration, development, maintenance, and operational issues.
+# Unibench - Towards Benchmarking the Multi-Model Database Systems
+The Unibench project aims to develop a generic benchmark for a holistic evaluation of multi-model database systems (MMDS), which are able to support multiple data models such as documents, graph, and key-value models in a single back-end. UniBench consists of a set of mixed data models that mimics a social commerce application, which covers data models including JSON, XML, key-value, tabular, and graph. The UniBench workload consists of a set of complex read-only queries and read-write transactions that involve at least two data models.
 
+Please access [the TPCTC 2018 paper](https://www.cs.helsinki.fi/u/jilu/documents/UniBench.pdf) to find more details:
+
+The current implementations include four the-state-of-the-art MMDS, ArangoDB, OrientDB, AgensGraph, and Spark, user can also develop new query of interest to gain the sights.     
+
+
+```
+Zhang, Chao, et al. "UniBench: A benchmark for multi-model database management systems." TPCTC. Springer, Cham, 2018.
