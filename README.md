@@ -3,8 +3,18 @@ The Unibench project aims to develop a generic benchmark for a holistic evaluati
 
 Please access [the TPCTC 2018 paper](https://www.cs.helsinki.fi/u/jilu/documents/UniBench.pdf) to find more details:
 
-The current implementations include four the-state-of-the-art MMDS, ArangoDB, OrientDB, AgensGraph, and Spark, user can also develop new query of interest to gain the sights.     
-
-
 ```
 Zhang, Chao, et al. "UniBench: A benchmark for multi-model database management systems." TPCTC. Springer, Cham, 2018.
+
+## Environment
+
+To run this benchmark, you need to have the systems under test installed, and JRE 7 or 8 installed. The current implementations include four the-state-of-the-art MMDS, ArangoDB, OrientDB, AgensGraph, and Spark (partial evaluation), you may also develop new query of interest to gain more sights.
+
+## Running
+
+Download the release as follow:
+https://github.com/HY-UDBMS/Unibench/releases
+
+```
+./Unibench --MMDBS ArangoDB, OrientDB, AgensGraph  --Workload ALLQueries --SF 1 
+```
