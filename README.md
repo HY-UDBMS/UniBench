@@ -17,5 +17,6 @@ Download the release as follow:
 https://github.com/HY-UDBMS/Unibench/releases
 
 ```
-./Unibench --MMDB ArangoDB  --Workload ALLQueries --SF 1 
+./DataImporting_ArangoDB
+./Unibench --MMDB ArangoDB  --Workload ALLQueries
 ```
