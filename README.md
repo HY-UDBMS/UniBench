@@ -18,5 +18,5 @@ https://github.com/HY-UDBMS/Unibench/releases
 
 ```
 ./DataImporting_ArangoDB
-./Unibench --MMDB ArangoDB  --Workload Q1
+./Unibench --MMDB ArangoDB  --Workload Q1 --ParameterMethod Random
 ```
