@@ -9,7 +9,7 @@ Zhang, Chao, et al. "UniBench: A benchmark for multi-model database management s
 
 ## Environment
 
-To run this benchmark, you need to have the systems under test installed, and JRE >=8 installed. The current implementations include four state-of-the-art MMDB. Namely, ArangoDB (Query Language: AQL), OrientDB (Query Language: Orient SQL), AgensGraph (Query Language: SQL/Cypher), and Spark (partial evaluation using Spark SQL), you may also employ Unibench to evaluate a new MMDB by the following steps: (1) write an importing script or program, (2) <em>extends</em> the MMDB abstract class. (3) implement the connection and query methods in the corresponding MMDB class.
+To run this benchmark, you need to have the systems under test installed, and JRE >=8 installed. The current implementations include four state-of-the-art MMDB. Namely, ArangoDB (Query Language: AQL), OrientDB (Query Language: Orient SQL), AgensGraph (Query Language: SQL/Cypher), and Spark (partial evaluation using Spark SQL), you may also employ Unibench to evaluate a new MMDB by the following steps: (1) write an importing script or program, (2) <em>extends</em> the MMDB abstract class. (3) implement the <em>connection</em> and <em>query</em> methods in the corresponding MMDB class.
 
 ## Running
 
