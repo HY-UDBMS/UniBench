@@ -18,5 +18,5 @@ https://github.com/HY-UDBMS/Unibench/releases
 
 ```
 ./DataImporting_ArangoDB.sh
-./Unibench --MMDB ArangoDB  --Workload Q1
+jave -jar Unibench.jar ArangoDB Q1
 ```
