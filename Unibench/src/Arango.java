@@ -16,7 +16,7 @@ public class Arango extends MMDB {
 	
 		Object Connection(){
 			ArangoDB arangoDB = new ArangoDB.Builder()
-					.host("localhost", 8529).user("root").password("123")
+					.host("localhost", 8529).user("root").password("")
 					.build();
 			
 			return (Object)arangoDB;
