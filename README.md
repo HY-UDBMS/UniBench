@@ -20,3 +20,10 @@ https://github.com/HY-UDBMS/Unibench/releases, and try out the first multi-model
 ./DataImporting_ArangoDB.sh
 java -jar Unibench.jar ArangoDB Q1
 ```
+
+## Notes
+
+To run the benchmark in OrientDB, you need to create a custom javascript function named compareList in the Functions panel of OrientDB. Importing the data to OrientDB by a sinle command under the DataImporting_OrientDB as follow:  
+```
+./Orientimport.sh
+```
