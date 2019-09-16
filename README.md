@@ -13,7 +13,7 @@ To run this benchmark, you need to have the systems under test installed, and JR
 
 ## Running
 
-Note that ArangoDB uses the default <em>_System</em> database and the password is empty. OrientDB uses a database named <em>test</em> that you may create beforehand. Download the release as follow:
+Note that ArangoDB uses the default <em>_System</em> database and the password is empty. OrientDB uses a database named <em>test</em> that you may create beforehand. Download the release as follows:
 https://github.com/HY-UDBMS/Unibench/releases, and try out the first multi-model query as follows:
 
 ```
