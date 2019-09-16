@@ -23,7 +23,7 @@ java -jar Unibench.jar ArangoDB Q1
 
 ## Notes
 
-To run the benchmark in OrientDB, you need to create a custom javascript function named <em>compareList</em> in the Functions panel of OrientDB. Importing the data to OrientDB by a sinle command under the DataImporting_OrientDB as follow:  
+To run the benchmark in OrientDB, you need to create a custom javascript function named <em>compareList</em> in the Functions panel of OrientDB. Importing the data to OrientDB by a single command under the DataImporting_OrientDB as follow:  
 ```
 ./Orientimport.sh
 ```
