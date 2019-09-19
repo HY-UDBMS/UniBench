@@ -51,7 +51,7 @@ public class Arango extends MMDB {
 	    
 	    void Q2(String ProductId) { 			
 	    	
-	    	String AQ2 = "Let personlist =(For post in Inbound @id PostHasTag For person in Inbound post._id PersonHasTag limit 100 return person._key) "
+	    	String AQ2 = "Let personlist =(For post in Inbound @id PostHasTag For person in Inbound post._id PersonHasPost limit 100 return person._key) "
 				+ "For order in Order Filter order.OrderDate>\"2022\" and @key in order.Orderline[*].productId and order.PersonId in Unique(personlist) "
 				+ "Return Distinct(order.PersonId)";		
 
@@ -96,7 +96,7 @@ public class Arango extends MMDB {
 	    void Q5(String PersonId, String brand) {
 		    String AQ5="Let Plist=(For friend in 1..1 Outbound @id KnowsGraph "
 		    		+ "For order in Order Filter order.PersonId==friend._key and @brand in order.Orderline[*].brand return distinct(friend)) "
-		    		+ "For person in Plist For post in Outbound person._id PersonHasTag "
+		    		+ "For person in Plist For post in Outbound person._id PersonHasPost "
 		    		+ "For tag in Outbound post PostHasTag Return {person:person,tags:tag}";
 		    
 		    ArangoDB Conn=(ArangoDB)this.Connection();
@@ -162,7 +162,7 @@ public class Arango extends MMDB {
 		    				+ "LET top_companies=(For brand in brands Filter brand in vendors Collect name=brand with count into sales Sort sales DESC LIMIT 3 Return {name,sales}) "
 		    				+ "LET merged=( For company in top_companies For order in Order Filter order.OrderDate < \"2019\" and order.OrderDate > \"2018\" and company.name in order.Orderline[*].brand For customer in Customer Filter customer._key==order.PersonId Return {name:company.name,persons:order.PersonId,gender:customer.gender}) "
 		    				+ "LET groups= (For item in merged Collect name=item.name, gender=item.gender into sales Return {name:name,gender:gender,sales:count(sales), plist:sales[*].item.persons}) "
-		    				+ "For group in groups For person in group.plist For post in Outbound Concat('Customer/',person) PersonHasTag Filter post.creationDate>\"2012-10-10\" Collect entry=group with count into posts Sort posts DESC Return {entry:entry,posts:posts}";
+		    				+ "For group in groups For person in group.plist For post in Outbound Concat('Customer/',person) PersonHasPost Filter post.creationDate>\"2012-10-10\" Collect entry=group with count into posts Sort posts DESC Return {entry:entry,posts:posts}";
 		    ArangoDB Conn=(ArangoDB)this.Connection();
 			long millisStart9 = System.currentTimeMillis();
 			ArangoCursor<String> cursor9 = Conn.db("_system").query(AQ9,String.class);
@@ -171,7 +171,7 @@ public class Arango extends MMDB {
 	    }
 	    
 	    void Q10() {
-		    String AQ10="LET personList=(FOR post IN Post Filter post.creationDate>\"2012-10\" FOR person IN INBOUND post PersonHasTag COLLECT activist=person WITH COUNT INTO cnt SORT cnt DESC LIMIT 10 RETURN activist._key) FOR order IN Order FILTER order.PersonId IN personList COLLECT c=order.PersonId INTO g RETURN { Customer:c, Recency:MAX(g[*].order.OrderDate), Frequency:LENGTH(g[*]),Monetary:SUM(g[*].order.TotalPrice)}";
+		    String AQ10="LET personList=(FOR post IN Post Filter post.creationDate>\"2012-10\" FOR person IN INBOUND post PersonHasPost COLLECT activist=person WITH COUNT INTO cnt SORT cnt DESC LIMIT 10 RETURN activist._key) FOR order IN Order FILTER order.PersonId IN personList COLLECT c=order.PersonId INTO g RETURN { Customer:c, Recency:MAX(g[*].order.OrderDate), Frequency:LENGTH(g[*]),Monetary:SUM(g[*].order.TotalPrice)}";
 		    ArangoDB Conn=(ArangoDB)this.Connection();
 			long millisStart10 = System.currentTimeMillis();
 			ArangoCursor<String> cursor10 = Conn.db("_system").query(AQ10,String.class);
