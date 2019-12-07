@@ -4,6 +4,8 @@ The Unibench project aims to develop a generic benchmark for a holistic evaluati
 Please access our [DPD 2019 paper](http://link.springer.com/article/10.1007/s10619-019-07279-6) and [TPCTC 2018 paper](https://www.cs.helsinki.fi/u/jilu/documents/UniBench.pdf) to find more details:
 
 ```
+Zhang, Chao, et al. "Holistic Evaluation in Multi-Model Databases Benchmarking." In Distributed and Parallel Databases, 2019.
+
 Zhang, Chao, et al. "UniBench: A benchmark for multi-model database management systems." TPCTC. Springer, Cham, 2018.
 ```
 
