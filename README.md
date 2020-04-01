@@ -46,4 +46,4 @@ Importing the data to OrientDB by a single command under the DataImporting_Orien
 ```
 
 ## Data provenance
-We collect the metadata from three datasets, namely, [LDBC dataset](https://github.com/ldbc/ldbc_snb_datagen), [DBpedia dataset](https://wiki.dbpedia.org/), and [Amazon product dataset](http://jmcauley.ucsd.edu/data/amazon/, and we use these data for purposes of academic research.
+We collect the metadata from three datasets, namely, [LDBC dataset](https://github.com/ldbc/ldbc_snb_datagen), [DBpedia dataset](https://wiki.dbpedia.org/), and [Amazon product dataset](http://jmcauley.ucsd.edu/data/amazon/), and we use these data for purposes of academic research.
