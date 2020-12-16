@@ -76,6 +76,7 @@ public class Executor {
         		} catch (Exception e) {
         			e.printStackTrace();
         		}
+			break;
         	case "Q4":
                 List<String> P4;
         		try {
@@ -83,6 +84,7 @@ public class Executor {
         		} catch (Exception e) {
         			e.printStackTrace();
         		}
+			break;
         	case "Q5":
                 List<String> P5_1;
                 List<String> P5_2;
@@ -96,6 +98,7 @@ public class Executor {
         		} catch (Exception e) {
         			e.printStackTrace();
         		}	
+			break;
         	case "Q6":
                 List<String> P6;
         		try {
@@ -107,6 +110,7 @@ public class Executor {
         		} catch (Exception e) {
         			e.printStackTrace();
         		}	
+			break;
         	case "Q7":
                 List<String> P7;
         		try {
@@ -117,25 +121,28 @@ public class Executor {
         		} catch (Exception e) {
         			e.printStackTrace();
         		}	
+			break;
         	case "Q8":
         		try {
         			db.Q8();
         		} catch (Exception e) {
         			e.printStackTrace();
         		}	
+			break;
         	case "Q9":
         		try {
         			db.Q9();
         		} catch (Exception e) {
         			e.printStackTrace();
         		}	
+			break;
         	case "Q10":
         		try {
         			db.Q10();
         		} catch (Exception e) {
         			e.printStackTrace();
         		}	
-        		
+			break;       		
       }
 	}
 }
