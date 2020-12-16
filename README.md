@@ -23,7 +23,7 @@ https://github.com/HY-UDBMS/UniBench/releases/tag/0.2, and try out the first mul
 java -jar Unibench.jar ArangoDB Q1
 ```
 
-## Notes
+## Benchmarking notes
 
 (1) larger datasets with SF10 and SF30 can be found at https://github.com/HY-UDBMS/UniBench/releases/tag/data.
 
