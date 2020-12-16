@@ -25,7 +25,14 @@ java -jar Unibench.jar ArangoDB Q1
 
 ## Notes
 
-To run the benchmark in OrientDB, you need to create a custom javascript function named <em>compareList</em> in the Functions panel of OrientDB as follow: 
+
+(1) for the UniBench schema in the DPD paper, the tag table and the product table use the same data of Product.csv, the productId has the one-to-one mapping to the tagid. The hasInterest relation is removed since the queries do not involve it.
+
+(2) for the data importing, we have released the scripts for ArangoDB and OrientDB based on their importer, since they have evolved several versions, please check if some parameters need to be changed. For example, ArangoDB 3.7 has used arangoimport utility to replace arangoimp, and the authentication needs to be turned off.
+
+(3) if the benchmark can not find the parameter files (Brands, PersonIds, ProductIds), please download them from the github repo to the directory with path ./UniBench/Unibench/ 
+
+(4) To run the benchmark in OrientDB, you need to create a custom javascript function named <em>compareList</em> in the Functions panel of OrientDB as follow: 
 
 ```
 var IDs = new Array();
