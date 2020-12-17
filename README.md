@@ -1,7 +1,7 @@
 # UniBench - Towards Benchmarking the Multi-Model DBMS
 The [UniBench project](https://www.helsinki.fi/en/researchgroups/unified-database-management-systems-udbms/unibench-towards-benchmarking-multi-model-dbms) aims to develop a generic benchmark for a holistic evaluation of multi-model database systems (MMDS), which are able to support multiple data models such as documents, graph, and key-value models in a single back-end. UniBench consists of a set of mixed data models that mimics a social commerce application, which covers data models including JSON, XML, key-value, tabular, and graph. The UniBench workload consists of a set of complex read-only queries and read-write transactions that involve at least two data models.
 
-Please access our [DPD 2019 paper](http://link.springer.com/article/10.1007/s10619-019-07279-6) and [TPCTC 2018 paper](https://www.cs.helsinki.fi/u/jilu/documents/UniBench.pdf) to find more details:
+Please access our [DAPD 2019 journal paper](http://link.springer.com/article/10.1007/s10619-019-07279-6) and [TPCTC 2018 paper](https://www.cs.helsinki.fi/u/jilu/documents/UniBench.pdf) to find more details:
 
 ```
 Zhang, Chao, et al. "Holistic Evaluation in Multi-Model Databases Benchmarking." In Distributed and Parallel Databases, 2019.
@@ -27,7 +27,7 @@ java -jar Unibench.jar ArangoDB Q1
 
 (1) larger datasets with SF10 and SF30 can be found at https://github.com/HY-UDBMS/UniBench/releases/tag/data.
 
-(2) for the UniBench schema in the DPD paper, the tag table and the product table use the same data of Product.csv, the productId has the one-to-one mapping to the tagid. The hasInterest relation is removed since the queries do not involve it.
+(2) for the UniBench schema in the DAPD 2019 journal paper, the tag table and the product table use the same data of Product.csv, the productId has the one-to-one mapping to the tagid. The hasInterest relation is removed since the queries do not involve it.
 
 (3) for the data importing, we have released the scripts for ArangoDB and OrientDB based on their importer, since they have evolved several versions, please check if some parameters need to be changed. For example, ArangoDB 3.7 has used arangoimport utility to replace arangoimp, and the authentication needs to be turned off.
 
