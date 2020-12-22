@@ -4,9 +4,9 @@ The [UniBench project](https://www.helsinki.fi/en/researchgroups/unified-databas
 Please access our [Big Data 2020 tutorial](https://www.helsinki.fi/en/researchgroups/unified-database-management-systems-udbms/ieee-big-data-2020-tutorial), [DAPD 2019 journal paper](http://link.springer.com/article/10.1007/s10619-019-07279-6), and [TPCTC 2018 paper](https://www.cs.helsinki.fi/u/jilu/documents/UniBench.pdf) to find more details:
 
 ```
-Zhang, Chao, et al. "Big Data System Benchmarking: State of the Art, Current Practices, and Open Challenges." In IEEE BIG DATA 2020 TUTORIAL, 2020.
+Zhang, Chao, Jiaheng Lu. "Big Data System Benchmarking: State of the Art, Current Practices, and Open Challenges." In IEEE BIG DATA 2020 TUTORIAL, 2020.
 
-Zhang, Chao, et al. "Holistic Evaluation in Multi-Model Databases Benchmarking." In Distributed and Parallel Databases, 2019.
+Zhang, Chao, Jiaheng Lu. "Holistic Evaluation in Multi-Model Databases Benchmarking." In Distributed and Parallel Databases, 2019.
 
 Zhang, Chao, et al. "UniBench: A benchmark for multi-model database management systems." TPCTC. Springer, Cham, 2018.
 ```
